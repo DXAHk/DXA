@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Ubuntu&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Righteous', cursive;
+font-family: 'Ubuntu', sans-serif;
+}
+body
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #232427;
+  min-height: 100vh;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+table, th, td {
+  border: 0px solid black;
+  border-collapse: collapse;
+  font-weight: 900;
+}
+th, td {
+  padding: 6px;
+  padding-right: 2px;
+  padding-left: 26px;
+  text-align: left;
+  border-radius: 40px;
+}
+
+
+.op a
+{
+  
+}
+
+.bts
+{
+  text-align: center;
+  font-weight: 900;
+}
+
+h3
+{
+  text-align: center;
+}
+.od
+{
+  height: 36%;
+  border-radius: 20px;
+}
+#fo
+{
+  font-weight: 900;
+}
+.no
+{
+  padding-left: 6px;
+  font-weight: 900;
+}
+.op
+{
+  text-align: justify;
+  padding-left: 6px;
+  font-weight: 900;
+}
+
+.opeu
+{
+  text-align: center;
+  font-weight: 900;
+}
+
+
+.container
+{
+  position: relative;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+.container .card
+{
+  position: relative;
+  height: 250px;
+  background: linear-gradient(#03a9f4,#e91ee3);
+  display: flex;
+  width: 45%;
+  margin: 30px 0;
+  border-radius: 30px ;
+  
+}
+.container .card .imgBx
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+  border-radius: 30px;
+}
+.container .card:hover .imgBx
+{
+  width: 150px;
+  height: 150px;
+  left: -75px;
+  top: calc(50% - 75px);
+  transition: 0.5s ease-in-out;
+  background: rgba(255,255,255,0.1);
+  border-radius: 30px;
+}
+.container .card .imgBx:before
+{
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 6em;
+  color: rgba(255,255,255,.05);
+  font-weight: 700;
+}
+.container .card .imgBx img
+{
+  max-width: 100px;
+  transition: 0.5s ease-in-out;
+}
+.container .card:hover .imgBx img
+{
+  max-width: 75px;
+}
+.container .card .content
+{
+  position: absolute;
+  right: 0;
+  width: calc(100% - 75px);
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .card .content h3
+{
+  margin-bottom: 5px;
+  font-size: 24px;
+  
+}
+
+/*folt*/
+.container .card .content a
+{
+  text-decoration: none;
+  
+}
+@media (max-width: 993px)
+{
+  .container
+  {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .card
+  {
+    width: 400px;
+    
+  }
+}
+@media (max-width: 768px)
+{
+  .container .card
+  {
+    max-width: 300px;
+    flex-direction: column;
+    height: auto;
+  }
+  .container .card .imgBx
+  {
+    position: relative;
+  }
+  .container .card .imgBx,
+  .container .card:hover .imgBx
+  {
+    width: 100%;
+    height: 200px;
+    border-radius: 30px 30px 0 0;
+    left: 0;
+  }
+  .container .card .imgBx img,
+  .container .card:hover .imgBx img
+  {
+    max-width: 100px;
+  }
+  .container .card .content
+  {
+    position: relative;
+    width: 100%;
+  }
+}
+/*folt*/
+#flot
+{
+  color: #E05297;
+}
+
+h2
+{
+  font-size: 24px;
+  text-align: center;
+}
+
+
+.neon {
+  font-family: neon;
+  color: #FB4264;
+  text-shadow: 0 0 3vw #F40A35;
+}
+.flux {
+  font-family: neon;
+  color: #426DFB;
+  text-shadow: 0 0 3vw #2356FF;
+}
+
+.neon {
+  animation: neon 2s ease infinite;
+  -moz-animation: neon 2s ease infinite;
+  -webkit-animation: neon 2s ease infinite;
+}
+
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .5vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .5vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+  -moz-animation: flux 2s linear infinite;
+  -webkit-animation: flux 2s linear infinite;
+  -o-animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE, .5vw .5vw .1vw #147280;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180, .5vw .5vw .1vw #0A3940;
+    color: #146C80;
+  }
+}
+
+.pdofty
+{
+  text-decoration: none;
+  color: #fff;
+  border: 30px;
+  border-radius: 30px;
+  background: #232427;
+  padding: 11px;
+}
+.pdofty:hover
+{
+  color: #fff;
+  background: rgba(255,255,255,0.1);
+}
